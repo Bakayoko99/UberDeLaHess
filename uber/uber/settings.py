@@ -8,7 +8,16 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
+
+
 """
+
+#django.contrib.contenttypes.models.ContentType
+
+#import os
+#os.environ.setdefault("DJANGO_SETTINGS_MODULE", __file__)
+#import django
+#django.setup()
     
 from pathlib import Path
 
@@ -39,7 +48,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'payment',
-    'rideRequest'
+    'rideRequest',
+    'uber'
 ]
 
 MIDDLEWARE = [

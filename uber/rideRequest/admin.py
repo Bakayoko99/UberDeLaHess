@@ -4,6 +4,8 @@ from django.contrib import admin
 
 from .models import PriceEstimate
 from .models import TimeEstimate
+from .models import CodePromo
 
 admin.site.register(PriceEstimate)
 admin.site.register(TimeEstimate)
+admin.site.register(CodePromo)

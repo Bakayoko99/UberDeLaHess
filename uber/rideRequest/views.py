@@ -1,7 +1,8 @@
 #from django.shortcuts import render
 from rest_framework import generics
-from .models import PriceEstimate, TimeEstimate
-from .serializers import PriceEstimateSerializer, TimeEstimateSerializer
+from .models import PriceEstimate, TimeEstimate,CodePromo
+from .serializers import CodePromoSerializer, PriceEstimateSerializer, TimeEstimateSerializer
+#from UberDeLaHess.uber.rideRequest import serializers
 
 #Permet de creer un price estimate et de voir une liste de tous les price estimate crées
 class PriceEstimateList(generics.ListCreateAPIView):
@@ -22,6 +23,10 @@ class TimeEstimateList(generics.ListCreateAPIView):
 class TimeEstimateDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = TimeEstimate.objects.all()
     serializer_class = TimeEstimateSerializer
+
+class CodePromoList(generics.ListCreateAPIView):
+    queryset = CodePromo.objects.all()
+    serializer_class = CodePromoSerializer
 
 
 
