@@ -10,4 +10,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TestView.as_view(), name='test'),
     path('rideRequest/',include('rideRequest.urls')),
+    path('signup/', include('signup.urls')),
 ]

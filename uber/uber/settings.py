@@ -49,7 +49,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'payment',
     'rideRequest',
-    'uber'
+    'uber',
+    'signup',
 ]
 
 MIDDLEWARE = [
